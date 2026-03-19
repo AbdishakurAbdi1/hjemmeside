@@ -6,7 +6,7 @@ export default function Home() {
       <div className="max-w-screen-sm mx-auto text-lg flex flex-col gap-6 py-24 p-8 text-4xl font-bold">
         <div></div>
         <h1 className="text-4xl font-bold text-gray-100">
-           Hei, jeg heter Abdishakur Abdi!
+           Hei, jeg heter  Abdishakur Abdi!
         </h1>
         <p>
           Jeg studerer Datateknologi på Universitetet i Bergen
