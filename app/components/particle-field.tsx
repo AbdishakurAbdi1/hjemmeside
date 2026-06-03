@@ -21,7 +21,7 @@ const particles: Array<{ left?: string; right?: string; dur: number; delay: numb
   { right: "13%", dur: 17, delay: -9  },
   { right: "1%",  dur: 22, delay: -19 },
   { right: "21%", dur: 19, delay: -16 },
-  // Centre — visible in the gap above the content box, hidden behind it below
+  // Centre - visible in the gap above the content box, hidden behind it below
   { left: "28%", dur: 16, delay: -4  },
   { left: "35%", dur: 20, delay: -11 },
   { left: "42%", dur: 13, delay: -7  },
