@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BildeGalleri from "./bilde-galleri";
 
 interface ProsjektKortProps {
   nummer: number;
@@ -30,20 +31,24 @@ export default function ProsjektKort({ nummer, tittel, bilder, beskrivelse, tekn
         ))}
       </div>
 
-      {/* Bilder */}
-      <div className={`grid gap-3 mb-6 mx-auto ${bilder.length > 1 ? "grid-cols-2 max-w-lg" : "grid-cols-1 max-w-sm"}`}>
-        {bilder.map((bilde, i) => (
-          <div key={i} className="rounded-xl overflow-hidden border border-gray-200/60 dark:border-gray-700 shadow-sm">
-            <Image
-              src={bilde}
-              alt={`Skjermbilde ${i + 1} av ${tittel}`}
-              width={600}
-              height={400}
-              className="w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
+      {/* Bilder: galleri hvis 3+, grid hvis 1-2 */}
+      {bilder.length >= 3 ? (
+        <BildeGalleri bilder={bilder} tittel={tittel} />
+      ) : (
+        <div className={`grid gap-3 mb-6 mx-auto ${bilder.length > 1 ? "grid-cols-2 max-w-lg" : "grid-cols-1 max-w-sm"}`}>
+          {bilder.map((bilde, i) => (
+            <div key={i} className="rounded-xl overflow-hidden border border-gray-200/60 dark:border-gray-700 shadow-sm">
+              <Image
+                src={bilde}
+                alt={`Skjermbilde ${i + 1} av ${tittel}`}
+                width={600}
+                height={400}
+                className="w-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Beskrivelse */}
       <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed mb-6 max-w-xl">

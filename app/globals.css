@@ -4,6 +4,8 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-bg-ytre: #c2d4e6;
+  --color-bg-indre: #dce6f0;
 }
 
 body {
