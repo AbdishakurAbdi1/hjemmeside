@@ -1,6 +1,6 @@
 const vervListe = [
   {
-    tittel: "Hovedstyre — NestLeder",
+    tittel: "Hovedstyre - NestLeder",
     org: "echo - Linjeforeningen for informatikk · mar. 2026 - nåtid",
     beskrivelse:
       "Nestleder i hovedstyret til echo, som består av 14 studenter. Vi har et overordnet ansvar for organisasjonen, samt det sosiale miljøet og faglige studentsaker. Vi representerer rundt 900 informatikkstudenter og fungerer som bindeleddet mellom studentene, instituttet, fakultetet og næringslivet.",
@@ -10,13 +10,13 @@ const vervListe = [
     },
   },
   {
-    tittel: "Hyggkom — Leder",
+    tittel: "Hyggkom - Leder",
     org: "echo - Linjeforeningen for informatikk · mar. 2025 - mar. 2026 · 1 år 1 mnd",
     beskrivelse:
       "Hyggkom er en undergruppe i echo - linjeforeningen for informatikkstudenter. Vi har fokus på å skape et trivelig og inkluderende miljø på lesesalene og campus. Vi planlegger og gjennomfører høytidsrelaterte aktiviteter, sosiale arrangementer og andre tiltak som fremmer trivsel blant studentene.",
   },
   {
-    tittel: "Hyggkom — Styremedlem og Sosialansvarlig",
+    tittel: "Hyggkom - Styremedlem og Sosialansvarlig",
     org: "echo - Linjeforeningen for informatikk · aug. 2024 - mar. 2025 · 8 mnd",
   },
 ];
