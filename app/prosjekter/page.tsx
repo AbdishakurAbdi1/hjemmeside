@@ -8,7 +8,7 @@ export default function Prosjekter() {
         Prosjekter
       </h1>
       <p className="text-base text-gray-500 dark:text-gray-400 text-center mb-12">
-        Under finner du mine prosjekter.
+        Under finner du mine prosjekter. (kommer flere etterhvert)
       </p>
 
       <ProsjektKort 
