@@ -7,8 +7,11 @@ export default function Prosjekter() {
       <h1 className="text-5xl font-bold tracking-tight leading-tight mb-4 text-gray-900 dark:text-white text-center">
         Prosjekter
       </h1>
-      <p className="text-base text-gray-500 dark:text-gray-400 text-center mb-12">
-        Under finner du mine prosjekter. (kommer flere etterhvert)
+      <p className="text-base font-semibold text-gray-500 dark:text-gray-400 text-center mb-1">
+        Under finner du mine prosjekter.
+      </p>
+      <p className="text-sm text-gray-500 dark:text-gray-400 text-center mb-12">
+        For tiden jobber jeg med en egen musikk-spiller desktop app med Tauri, Rust, TypeScript og React. Flere prosjekter kommer etterhvert.
       </p>
 
       <ProsjektKort 
