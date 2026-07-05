@@ -16,7 +16,7 @@ Personlig porteføljeside for en informatikkstudent ved Universitetet i Bergen. 
 
 - Lys/mørk modus (class-basert, starter alltid i lys modus)
 - Animerte partikler i bakgrunnen
-- Responsive design
+- Responsivt design
 - Sider: Forside og Prosjekter
 
 ## Filstruktur
@@ -24,19 +24,22 @@ Personlig porteføljeside for en informatikkstudent ved Universitetet i Bergen. 
 ```
 app/
 ├── components/
-│   ├── header.tsx        # Navigasjonsbar
-│   ├── particle-field.tsx # Animert bakgrunn
-│   └── theme-toggle.tsx  # Mørk/lys-modus-knapp
+│   ├── sections/          # Innholdsseksjoner (om meg, ferdigheter, osv.)
+│   ├── header.tsx
+│   ├── footer.tsx
+│   ├── page-layout.tsx    # Felles sideoppsett
+│   ├── particle-field.tsx
+│   ├── prosjekt-kort.tsx
+│   ├── bilde-galleri.tsx
+│   └── theme-toggle.tsx
 ├── prosjekter/
-│   └── page.tsx          # Prosjekter-side
+│   └── page.tsx
 ├── globals.css
 ├── layout.tsx
-└── page.tsx              # Forside
+└── page.tsx
 ```
 
 ## Kjør lokalt
-
-Dette repoet er åpent og du er velkommen til å klone det og lage din egen versjon!
 
 ```bash
 git clone https://github.com/AbdishakurAbdi1/hjemmeside.git
@@ -47,4 +50,6 @@ npm run dev
 
 Åpne [http://localhost:3000](http://localhost:3000) i nettleseren.
 
-Bytt ut navn, tekst og innhold i `app/page.tsx` med din egen informasjon, så har du en ferdig porteføljeside.
+## Vil du lage din egen?
+
+Du er velkommen til å **forke** dette repoet og lage din egen versjon. Da får du en kopi under din egen GitHub-konto som du kan tilpasse fritt med ditt eget navn og innhold.
