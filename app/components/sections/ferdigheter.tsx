@@ -1,8 +1,8 @@
 const skillGroups = [
   { level: "Sterk",         skills: ["Python", "Java"] },
   { level: "Erfaren",       skills: ["HTML/CSS", "Git"] },
-  { level: "Middels",       skills: ["TypeScript", "React", "Next.js"] },
-  { level: "Grunnleggende", skills: ["Kotlin", "C", "C++", "SQL"] },
+  { level: "Middels",       skills: ["Kotlin", "TypeScript", "React", "Next.js"] },
+  { level: "Grunnleggende", skills: ["C", "C++", "SQL"] },
 ];
 
 export default function Ferdigheter() {
