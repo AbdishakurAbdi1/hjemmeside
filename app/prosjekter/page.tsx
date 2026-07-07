@@ -24,19 +24,6 @@ export default function Prosjekter() {
       />
       <ProsjektKort
         nummer={2}
-        tittel="BoxMove"
-        bilder={[
-          "/prosjekter/BoxMove_homepage.png",
-          "/prosjekter/BoxMove_game1.png",
-          "/prosjekter/BoxMove_game2.png",
-          "/prosjekter/BoxMove_game3.png",
-          "/prosjekter/BoxMove_GameOver.png",
-        ]}
-        beskrivelse="Et 2D labyrint- og logikkspill utviklet i Java (LibGDX). Spillet er et gruppeprosjekt i emnet systemutvikling. Spilleren navigerer et rutenettbasert brett, flytter bokser, unngår en KI-styrt fiende og bruker power-ups (HEAVYMODE, FRAGILEMODE) for å løse stadig vanskeligere brett og nå igloen."
-        teknologier={["Java", "LibGDX", "OOP", "MVC", "Maven"]}
-      />
-      <ProsjektKort
-        nummer={3}
         tittel="Battleship"
         bilder={[
           "/prosjekter/batteshipHomePage.png",
@@ -48,6 +35,19 @@ export default function Prosjekter() {
         beskrivelse="Et fullstendig Battleship-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Battleship-mekanikk der to spillere plasserer skip og forsøker å senke hverandres skip. Motstanderen er en implementert KI."
         teknologier={["Java", "OOP", "MVC", "Swing"]}
         githubUrl="https://github.com/AbdishakurAbdi1/BattleShip"
+      />
+      <ProsjektKort
+        nummer={3}
+        tittel="BoxMove"
+        bilder={[
+          "/prosjekter/BoxMove_homepage.png",
+          "/prosjekter/BoxMove_game1.png",
+          "/prosjekter/BoxMove_game2.png",
+          "/prosjekter/BoxMove_game3.png",
+          "/prosjekter/BoxMove_GameOver.png",
+        ]}
+        beskrivelse="Et 2D labyrint- og logikkspill utviklet i Java (LibGDX). Spillet er et gruppeprosjekt i emnet systemutvikling. Spilleren navigerer et rutenettbasert brett, flytter bokser, unngår en KI-styrt fiende og bruker power-ups (HEAVYMODE, FRAGILEMODE) for å løse stadig vanskeligere brett og nå igloen."
+        teknologier={["Java", "LibGDX", "OOP", "MVC", "Maven"]}
       />
     </PageLayout>
   );
