@@ -26,7 +26,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
-          className="text-ink/70 dark:text-ink-dark/70 hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
+          className="text-ink dark:text-ink-dark/90 hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
         >
           <LinkedInIcon />
         </a>
@@ -35,7 +35,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
-          className="text-ink/70 dark:text-ink-dark/70 hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
+          className="text-ink dark:text-ink-dark/90 hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
         >
           <GitHubIcon />
         </a>

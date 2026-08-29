@@ -2,7 +2,7 @@ import SectionBlock from "../ui/section-block";
 import SectionHeading from "../ui/section-heading";
 import Pill from "../ui/pill";
 
-const teknologier = ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"];
+const teknologier = ["TypeScript", "React", "Next.js", "Tailwind CSS", "Vercel"];
 
 export default function DenneNettsiden() {
   return (
