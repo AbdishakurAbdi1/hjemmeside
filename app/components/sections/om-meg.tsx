@@ -7,11 +7,12 @@ export default function OmMeg() {
         Om meg
       </h2>
       <p className="text-base text-ink/80 dark:text-ink-dark/80 leading-relaxed max-w-xl">
-        Jeg har fullført en bachelor i Informatikk ved UiB og går nå på et master i
-        programvareutvikling. Jeg er en engasjert og aktiv student som liker å
-        holde meg involvert i miljøet rundt meg. Jeg trives med å jobbe på
-        spennende prosjekter og er alltid på utkikk etter nye
-        programmeringsspråk og teknologier å utforske.
+        Jeg har fullført en bachelorgrad i informatikk ved UiB og tar nå en
+        mastergrad i programvareutvikling. Jeg er en engasjert student som
+        trives med å bidra aktivt til både det sosiale og faglige
+        studentmiljøet. Jeg trives med å jobbe med spennende prosjekter og er
+        alltid på utkikk etter nye programmeringsspråk og teknologier å
+        utforske.
       </p>
     </SectionBlock>
   );
