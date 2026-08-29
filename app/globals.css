@@ -6,7 +6,7 @@
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-fraunces);
 
-  /* Varm, dempet palett — "Sand & Terracotta" */
+  /* Varm, dempet palett "Sand & Terracotta" */
 
   /* Tekst */
   --color-ink: #3a2e25;
@@ -27,6 +27,8 @@
   --color-sage-dark: #333b29;
   --color-stone: #e7ded0;
   --color-stone-dark: #2e2820;
+  --color-stone-deep: #ddd0b9;
+  --color-stone-deep-dark: #221d17;
 
   /* Aksentfarge (knapper, lenker, tidslinje, hover) */
   --color-terracotta: #c1694b;

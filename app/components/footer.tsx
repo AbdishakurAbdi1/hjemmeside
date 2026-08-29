@@ -16,7 +16,7 @@ function GitHubIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-stone dark:bg-stone-dark px-8 sm:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="bg-stone-deep dark:bg-stone-deep-dark px-8 sm:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <span className="font-display text-base font-semibold text-ink dark:text-ink-dark">
         Abdishakur Abdi
       </span>
