@@ -1,3 +1,6 @@
+import SectionBlock from "../ui/section-block";
+import SectionHeading from "../ui/section-heading";
+
 const vervListe = [
   {
     tittel: "Hovedstyre - NestLeder",
@@ -23,22 +26,23 @@ const vervListe = [
 
 export default function Verv() {
   return (
-    <section className="mb-12 pt-10 border-t border-gray-300/50 dark:border-gray-700/50">
-      <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-5">Verv</h2>
-      <div className="flex flex-col gap-6">
+    <SectionBlock tone="terracotta-tint">
+      <SectionHeading>Verv</SectionHeading>
+      <div className="flex flex-col gap-8 border-l-2 border-terracotta/30 dark:border-terracotta-dark/30 pl-6">
         {vervListe.map((v) => (
-          <div key={v.tittel}>
-            <p className="font-medium text-gray-800 dark:text-gray-200">{v.tittel}</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">{v.org}</p>
+          <div key={v.tittel} className="relative">
+            <span className="absolute -left-7.25 top-1.5 w-2.5 h-2.5 rounded-full bg-terracotta dark:bg-terracotta-dark" />
+            <p className="font-medium text-ink dark:text-ink-dark">{v.tittel}</p>
+            <p className="text-sm text-ink/70 dark:text-ink-dark/70 mt-0.5">{v.org}</p>
             {v.beskrivelse && (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{v.beskrivelse}</p>
+              <p className="text-sm text-ink/70 dark:text-ink-dark/70 mt-1">{v.beskrivelse}</p>
             )}
             {v.lenke && (
               <a
                 href={v.lenke.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 text-sm text-gray-600 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 underline underline-offset-2 transition-colors"
+                className="inline-block mt-2 text-sm text-terracotta-text dark:text-terracotta-dark hover:opacity-80 underline underline-offset-2 transition-opacity rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
               >
                 {v.lenke.tekst}
               </a>
@@ -46,6 +50,6 @@ export default function Verv() {
           </div>
         ))}
       </div>
-    </section>
+    </SectionBlock>
   );
 }
