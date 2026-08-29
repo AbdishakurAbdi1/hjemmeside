@@ -1,4 +1,5 @@
 import PageLayout from "./components/page-layout";
+import SectionBlock from "./components/ui/section-block";
 import OmMeg from "./components/sections/om-meg";
 import Ferdigheter from "./components/sections/ferdigheter";
 import Verv from "./components/sections/verv";
@@ -8,9 +9,11 @@ import DenneNettsiden from "./components/sections/denne-nettsiden";
 export default function Home() {
   return (
     <PageLayout>
-      <h1 className="text-5xl font-bold tracking-tight leading-tight mb-10 text-gray-900 dark:text-white text-center">
-        Hei, jeg er<br />Abdishakur Abdi
-      </h1>
+      <SectionBlock tone="cream" className="text-center pb-4 md:pb-6">
+        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight leading-tight text-ink dark:text-ink-dark">
+          Hei, jeg er<br />Abdishakur Abdi
+        </h1>
+      </SectionBlock>
       <OmMeg />
       <Ferdigheter />
       <Verv />
