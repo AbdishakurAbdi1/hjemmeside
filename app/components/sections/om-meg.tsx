@@ -5,7 +5,7 @@ export default function OmMeg() {
         Om meg
       </h2>
       <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl">
-        Jeg har fullført bacheloren i Informatikk ved UiB og går nå på master i
+        Jeg har fullført en bachelor i Informatikk ved UiB og går nå på et master i
         programvareutvikling. Jeg er en engasjert og aktiv student som liker å
         holde meg involvert i miljøet rundt meg. Jeg trives med å jobbe på
         spennende prosjekter og er alltid på utkikk etter nye
