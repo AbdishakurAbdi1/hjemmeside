@@ -1,54 +1,57 @@
 import PageLayout from "../components/page-layout";
+import SectionBlock from "../components/ui/section-block";
 import ProsjektKort from "../components/prosjekt-kort";
 
 export default function Prosjekter() {
   return (
     <PageLayout>
-      <h1 className="text-5xl font-bold tracking-tight leading-tight mb-4 text-gray-900 dark:text-white text-center">
-        Prosjekter
-      </h1>
-      <p className="text-base font-semibold text-gray-500 dark:text-gray-400 text-center mb-1">
-        Under finner du mine prosjekter.
-      </p>
-      <p className="text-sm text-gray-500 dark:text-gray-400 text-center mb-12">
-        For tiden jobber jeg med en egen musikk-spiller desktop app med Tauri, Rust, TypeScript og React. Flere prosjekter kommer etterhvert.
-      </p>
+      <SectionBlock tone="cream">
+        <h1 className="font-display text-5xl md:text-6xl font-semibold tracking-tight leading-tight mb-4 text-ink dark:text-ink-dark text-center">
+          Prosjekter
+        </h1>
+        <p className="text-base font-semibold text-ink/70 dark:text-ink-dark/70 text-center mb-1">
+          Under finner du mine prosjekter.
+        </p>
+        <p className="text-sm text-ink/70 dark:text-ink-dark/70 text-center mb-12">
+          For tiden jobber jeg med en egen musikk-spiller desktop app med Tauri, Rust, TypeScript og React. Flere prosjekter kommer etterhvert.
+        </p>
 
-      <ProsjektKort 
-        nummer={1}
-        tittel="Tetris"
-        bilder={["/prosjekter/tetris-spill.png", "/prosjekter/tetris-gameover.png"]}
-        beskrivelse="Et fullstendig Tetris-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Tetris-mekanikk med fallende brikker, radsletting og poengsum."
-        teknologier={["Java", "OOP", "MVC", "Swing"]}
-        githubUrl="https://github.com/AbdishakurAbdi1/Tetris"
-      />
-      <ProsjektKort
-        nummer={2}
-        tittel="Battleship"
-        bilder={[
-          "/prosjekter/batteshipHomePage.png",
-          "/prosjekter/battleshipHotToPlay.png",
-          "/prosjekter/battleshipGameStart.png",
-          "/prosjekter/battleshipMidGame.png",
-          "/prosjekter/batteleshipGameOver.png",
-        ]}
-        beskrivelse="Et fullstendig Battleship-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Battleship-mekanikk der to spillere plasserer skip og forsøker å senke hverandres skip. Motstanderen er en implementert KI."
-        teknologier={["Java", "OOP", "MVC", "Swing"]}
-        githubUrl="https://github.com/AbdishakurAbdi1/BattleShip"
-      />
-      <ProsjektKort
-        nummer={3}
-        tittel="BoxMove"
-        bilder={[
-          "/prosjekter/BoxMove_homepage.png",
-          "/prosjekter/BoxMove_game1.png",
-          "/prosjekter/BoxMove_game2.png",
-          "/prosjekter/BoxMove_game3.png",
-          "/prosjekter/BoxMove_GameOver.png",
-        ]}
-        beskrivelse="Et 2D labyrint- og logikkspill utviklet i Java (LibGDX). Spillet er et gruppeprosjekt i emnet systemutvikling. Spilleren navigerer et rutenettbasert brett, flytter bokser, unngår en KI-styrt fiende og bruker power-ups (HEAVYMODE, FRAGILEMODE) for å løse stadig vanskeligere brett og nå igloen."
-        teknologier={["Java", "LibGDX", "OOP", "MVC", "Maven"]}
-      />
+        <ProsjektKort
+          nummer={1}
+          tittel="Tetris"
+          bilder={["/prosjekter/tetris-spill.png", "/prosjekter/tetris-gameover.png"]}
+          beskrivelse="Et fullstendig Tetris-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Tetris-mekanikk med fallende brikker, radsletting og poengsum."
+          teknologier={["Java", "OOP", "MVC", "Swing"]}
+          githubUrl="https://github.com/AbdishakurAbdi1/Tetris"
+        />
+        <ProsjektKort
+          nummer={2}
+          tittel="Battleship"
+          bilder={[
+            "/prosjekter/batteshipHomePage.png",
+            "/prosjekter/battleshipHotToPlay.png",
+            "/prosjekter/battleshipGameStart.png",
+            "/prosjekter/battleshipMidGame.png",
+            "/prosjekter/batteleshipGameOver.png",
+          ]}
+          beskrivelse="Et fullstendig Battleship-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Battleship-mekanikk der to spillere plasserer skip og forsøker å senke hverandres skip. Motstanderen er en implementert KI."
+          teknologier={["Java", "OOP", "MVC", "Swing"]}
+          githubUrl="https://github.com/AbdishakurAbdi1/BattleShip"
+        />
+        <ProsjektKort
+          nummer={3}
+          tittel="BoxMove"
+          bilder={[
+            "/prosjekter/BoxMove_homepage.png",
+            "/prosjekter/BoxMove_game1.png",
+            "/prosjekter/BoxMove_game2.png",
+            "/prosjekter/BoxMove_game3.png",
+            "/prosjekter/BoxMove_GameOver.png",
+          ]}
+          beskrivelse="Et 2D labyrint- og logikkspill utviklet i Java (LibGDX). Spillet er et gruppeprosjekt i emnet systemutvikling. Spilleren navigerer et rutenettbasert brett, flytter bokser, unngår en KI-styrt fiende og bruker power-ups (HEAVYMODE, FRAGILEMODE) for å løse stadig vanskeligere brett og nå igloen."
+          teknologier={["Java", "LibGDX", "OOP", "MVC", "Maven"]}
+        />
+      </SectionBlock>
     </PageLayout>
   );
 }
