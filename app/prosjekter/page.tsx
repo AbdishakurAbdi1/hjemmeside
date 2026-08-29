@@ -51,6 +51,17 @@ export default function Prosjekter() {
           beskrivelse="Et 2D labyrint- og logikkspill utviklet i Java (LibGDX). Spillet er et gruppeprosjekt i emnet systemutvikling. Spilleren navigerer et rutenettbasert brett, flytter bokser, unngår en KI-styrt fiende og bruker power-ups (HEAVYMODE, FRAGILEMODE) for å løse stadig vanskeligere brett og nå igloen."
           teknologier={["Java", "LibGDX", "OOP", "MVC", "Maven"]}
         />
+        <ProsjektKort
+          nummer={4}
+          tittel="Beat for Beat"
+          bilder={[
+            "/prosjekter/BeatforBeat1.png",
+            "/prosjekter/BeatforBeat2.png",
+            "/prosjekter/BeatforBeat3.png",
+          ]}
+          beskrivelse="Egen Beat for Beat webbasert partyspill inspirert av det norske TV-programmet med samme navn. Spillerne skal gjette sanger ord for ord og finne hovedsangen. Bygget med ren HTML, CSS og JavaScript. Inkluderer et innebygd administrasjonspanel hvor man kan legge til, redigere og eksportere egne sanglister. Sangene er lagret lokalt i nettleseren med LocalStorage."
+          teknologier={["HTML", "CSS", "JavaScript"]}
+        />
       </SectionBlock>
     </PageLayout>
   );

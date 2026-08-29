@@ -1,6 +1,6 @@
 import Image from "next/image";
 import BildeGalleri from "./bilde-galleri";
-import Pill from "./ui/pill";
+import SkillPill from "./ui/skill-pill";
 
 interface ProsjektKortProps {
   nummer: number;
@@ -26,7 +26,7 @@ export default function ProsjektKort({ nummer, tittel, bilder, beskrivelse, tekn
       {/* Teknologi-tags */}
       <div className="flex flex-wrap gap-2 mb-6">
         {teknologier.map((t) => (
-          <Pill key={t}>{t}</Pill>
+          <SkillPill key={t} niva={2}>{t}</SkillPill>
         ))}
       </div>
 

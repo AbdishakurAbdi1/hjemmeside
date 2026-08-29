@@ -15,7 +15,7 @@ export default function BildeGalleri({ bilder, tittel }: BildeGalleriProps) {
   const neste = () => setAktiv((prev) => (prev + 1) % bilder.length);
 
   return (
-    <div className="mb-6 max-w-xl mx-auto">
+    <div className="mb-6">
       <div className="flex items-center gap-3">
         {/* Venstre pil */}
         <button
@@ -31,8 +31,9 @@ export default function BildeGalleri({ bilder, tittel }: BildeGalleriProps) {
           <Image
             src={bilder[aktiv]}
             alt={`Skjermbilde ${aktiv + 1} av ${tittel}`}
-            width={600}
-            height={400}
+            width={1200}
+            height={800}
+            sizes="(min-width: 768px) 800px, 90vw"
             className="w-full object-cover"
           />
         </div>
