@@ -39,7 +39,7 @@ export default function ParticleField() {
       {particles.map((p, i) => (
         <div
           key={i}
-          className="absolute top-0 w-2 h-2 rounded-full bg-gray-400"
+          className="absolute top-0 w-2 h-2 rounded-full bg-terracotta/40 dark:bg-terracotta-dark/30"
           style={{
             left: p.left,
             right: p.right,

@@ -18,22 +18,25 @@ function LinkedInIcon() {
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-linear-to-b from-white to-[#dce8f3] dark:from-gray-950 dark:to-gray-900">
-      <div className="max-w-4xl mx-auto px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 transition-colors">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-linear-to-b from-page to-page/80 dark:from-page-dark dark:to-page-dark/80 backdrop-blur-sm">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-2">
+        <Link
+          href="/"
+          className="font-display text-sm sm:text-base font-semibold text-ink dark:text-ink-dark hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm shrink-0 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-4"
+        >
           Abdishakur Abdi
         </Link>
-        <nav className="flex items-center gap-3">
+        <nav className="flex items-center gap-1.5 sm:gap-3">
           <ThemeToggle />
           <Link
             href="/prosjekter"
-            className="px-4 py-1.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-xl border border-gray-900 dark:border-white hover:bg-white dark:hover:bg-gray-900 hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="px-2.5 sm:px-4 py-1.5 bg-terracotta-text dark:bg-terracotta-dark text-cream dark:text-ink text-xs sm:text-sm font-medium rounded-full whitespace-nowrap hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
           >
             Prosjekter
           </Link>
           <a
             href="mailto:abdishakurabdi12@hotmail.com"
-            className="px-4 py-1.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium rounded-xl border border-gray-900 dark:border-white hover:bg-white dark:hover:bg-gray-900 hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="px-2.5 sm:px-4 py-1.5 bg-terracotta-text dark:bg-terracotta-dark text-cream dark:text-ink text-xs sm:text-sm font-medium rounded-full whitespace-nowrap hover:opacity-90 transition-opacity focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
           >
             Kontakt
           </a>
@@ -41,7 +44,7 @@ export default function Header() {
             href="https://www.linkedin.com/in/abdishakur-abdi-3398b12aa/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-900 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-400 transition-colors"
+            className="shrink-0 text-ink dark:text-ink-dark hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
             aria-label="LinkedIn-profil"
           >
             <LinkedInIcon />

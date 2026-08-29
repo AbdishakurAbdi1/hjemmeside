@@ -29,7 +29,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setDark(!dark)}
-      className="text-gray-900 dark:text-gray-100 hover:text-gray-500 dark:hover:text-gray-400 transition-colors"
+      className="text-ink dark:text-ink-dark hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
       aria-label={dark ? "Bytt til lys modus" : "Bytt til mørk modus"}
     >
       {dark ? <SunIcon /> : <MoonIcon />}

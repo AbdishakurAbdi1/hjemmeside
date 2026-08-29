@@ -4,12 +4,38 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-bg-ytre: #c2d4e6;
-  --color-bg-indre: #dce6f0;
+  --font-display: var(--font-fraunces);
+
+  /* Varm, dempet palett — "Sand & Terracotta" */
+
+  /* Tekst */
+  --color-ink: #3a2e25;
+  --color-ink-dark: #f1e7d8;
+
+  /* Ytre sidebakgrunn (bak det avrundede innholdskortet) */
+  --color-page: #f3e9da;
+  --color-page-dark: #1e1812;
+
+  /* Seksjonsbakgrunner */
+  --color-cream: #fbf5ec;
+  --color-cream-dark: #2b241c;
+  --color-sand: #f1e3c8;
+  --color-sand-dark: #362c1e;
+  --color-terracotta-tint: #f0ddd1;
+  --color-terracotta-tint-dark: #3a281f;
+  --color-sage: #b7c2a0;
+  --color-sage-dark: #333b29;
+  --color-stone: #e7ded0;
+  --color-stone-dark: #2e2820;
+
+  /* Aksentfarge (knapper, lenker, tidslinje, hover) */
+  --color-terracotta: #c1694b;
+  --color-terracotta-dark: #e08b67;
+  --color-terracotta-text: #9c4a2c;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
 @keyframes particle-fall {
