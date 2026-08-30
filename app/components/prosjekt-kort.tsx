@@ -9,9 +9,11 @@ interface ProsjektKortProps {
   beskrivelse: string;
   teknologier: string[];
   githubUrl?: string;
+  visGalleri?: boolean;
 }
 
-export default function ProsjektKort({ nummer, tittel, bilder, beskrivelse, teknologier, githubUrl }: ProsjektKortProps) {
+export default function ProsjektKort({ nummer, tittel, bilder, beskrivelse, teknologier, githubUrl, visGalleri }: ProsjektKortProps) {
+  const brukGalleri = visGalleri ?? bilder.length >= 3;
   return (
     <article className="bg-white/50 dark:bg-black/20 rounded-2xl p-8 mb-6 shadow-sm border border-ink/10 dark:border-ink-dark/10">
 
@@ -30,8 +32,8 @@ export default function ProsjektKort({ nummer, tittel, bilder, beskrivelse, tekn
         ))}
       </div>
 
-      {/* Bilder: galleri hvis 3+, grid hvis 1-2 */}
-      {bilder.length >= 3 ? (
+      {/* Bilder: galleri hvis 3+ (eller 2 om nødvendig), grid ellers */}
+      {brukGalleri ? (
         <BildeGalleri bilder={bilder} tittel={tittel} />
       ) : (
         <div className={`grid gap-3 mb-6 mx-auto ${bilder.length > 1 ? "grid-cols-2 max-w-lg" : "grid-cols-1 max-w-sm"}`}>

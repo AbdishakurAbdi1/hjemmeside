@@ -13,13 +13,17 @@ export default function Prosjekter() {
           Under finner du mine prosjekter.
         </p>
         <p className="text-sm text-ink/70 dark:text-ink-dark/70 text-center mb-12">
-          For tiden jobber jeg med en egen musikk-spiller desktop app med Tauri, Rust, TypeScript og React. Flere prosjekter kommer etterhvert.
+          For tiden jobber jeg med en egen musikk-spiller desktop app med Tauri,
+          Rust, TypeScript og React. Flere prosjekter kommer etterhvert.
         </p>
 
         <ProsjektKort
           nummer={1}
           tittel="Tetris"
-          bilder={["/prosjekter/tetris-spill.png", "/prosjekter/tetris-gameover.png"]}
+          bilder={[
+            "/prosjekter/tetris-spill.png",
+            "/prosjekter/tetris-gameover.png",
+          ]}
           beskrivelse="Et fullstendig Tetris-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Tetris-mekanikk med fallende brikker, radsletting og poengsum."
           teknologier={["Java", "OOP", "MVC", "Swing"]}
           githubUrl="https://github.com/AbdishakurAbdi1/Tetris"
@@ -61,6 +65,15 @@ export default function Prosjekter() {
           ]}
           beskrivelse="Egen Beat for Beat webbasert partyspill inspirert av det norske TV-programmet med samme navn. Spillerne skal gjette sanger ord for ord og finne hovedsangen. Bygget med ren HTML, CSS og JavaScript. Inkluderer et innebygd administrasjonspanel hvor man kan legge til, redigere og eksportere egne sanglister. Sangene er lagret lokalt i nettleseren med LocalStorage."
           teknologier={["HTML", "CSS", "JavaScript"]}
+        />
+        <ProsjektKort
+          nummer={5}
+          tittel="QR Studio"
+          bilder={["/prosjekter/QRStudio1.png", "/prosjekter/QRStudio2.png"]}
+          visGalleri
+          beskrivelse="Et lite fullstack-prosjekt der jeg har bygget en egen QR-kode-generator med en Flask-backend og en enkel frontend laget med HTML og CSS. Du limer inn en lenke, velger feilkorrigeringsnivå og får utlevert en QR-koden som kan også lastes ned som en PNG. Lenken er kodet direkte inn i mønsteret uten mellomledd, så den varer så lenge som siden eksisterer."
+          teknologier={["Python", "Flask", "HTML/CSS", "JavaScript"]}
+          githubUrl="https://github.com/AbdishakurAbdi1/qr-code-generator"
         />
       </SectionBlock>
     </PageLayout>
