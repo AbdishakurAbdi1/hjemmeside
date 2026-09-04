@@ -40,7 +40,7 @@ export default function Footer() {
           <GitHubIcon />
         </a>
         <span className="text-sm text-ink/60 dark:text-ink-dark/60">
-          © {new Date().getFullYear()} Abdishakur Abdi
+          © {new Date().getFullYear()} Abdishakur Abdi +47 97110425
         </span>
       </div>
     </footer>
