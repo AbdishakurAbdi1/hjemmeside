@@ -3,8 +3,8 @@ import SectionHeading from "../ui/section-heading";
 import SkillPill from "../ui/skill-pill";
 
 const skillGroups = [
-  { level: "Sterk",         niva: 1 as const, skills: ["Java", "Python", "Git"] },
-  { level: "Erfaren",       niva: 2 as const, skills: ["Kotlin", "HTML/CSS"] },
+  { level: "Sterk",         niva: 1 as const, skills: ["Java", "Python", "Git", "Kotlin"] },
+  { level: "Erfaren",       niva: 2 as const, skills: ["HTML/CSS", "Haskell"] },
   { level: "Middels",       niva: 3 as const, skills: ["TypeScript", "React", "SQL", "JavaScript"] },
   { level: "Grunnleggende", niva: 4 as const, skills: ["C", "C++", "SpringBoot"] },
 ];
