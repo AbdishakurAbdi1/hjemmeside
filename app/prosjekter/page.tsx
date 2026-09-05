@@ -21,8 +21,8 @@ export default function Prosjekter() {
           nummer={1}
           tittel="Tetris"
           bilder={[
-            "/prosjekter/tetris-spill.png",
-            "/prosjekter/tetris-gameover.png",
+            "/prosjektBilder/tetris-spill.png",
+            "/prosjektBilder/tetris-gameover.png",
           ]}
           beskrivelse="Et fullstendig Tetris-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Tetris-mekanikk med fallende brikker, radsletting og poengsum."
           teknologier={["Java", "OOP", "MVC", "Swing"]}
@@ -32,11 +32,11 @@ export default function Prosjekter() {
           nummer={2}
           tittel="Battleship"
           bilder={[
-            "/prosjekter/batteshipHomePage.png",
-            "/prosjekter/battleshipHotToPlay.png",
-            "/prosjekter/battleshipGameStart.png",
-            "/prosjekter/battleshipMidGame.png",
-            "/prosjekter/batteleshipGameOver.png",
+            "/prosjektBilder/batteshipHomePage.png",
+            "/prosjektBilder/battleshipHotToPlay.png",
+            "/prosjektBilder/battleshipGameStart.png",
+            "/prosjektBilder/battleshipMidGame.png",
+            "/prosjektBilder/batteleshipGameOver.png",
           ]}
           beskrivelse="Et fullstendig Battleship-spill implementert i Java som semesteroppgave ved UiB (første året). Spillet har klassisk Battleship-mekanikk der to spillere plasserer skip og forsøker å senke hverandres skip. Motstanderen er en implementert KI."
           teknologier={["Java", "OOP", "MVC", "Swing"]}
@@ -46,11 +46,11 @@ export default function Prosjekter() {
           nummer={3}
           tittel="BoxMove"
           bilder={[
-            "/prosjekter/BoxMove_homepage.png",
-            "/prosjekter/BoxMove_game1.png",
-            "/prosjekter/BoxMove_game2.png",
-            "/prosjekter/BoxMove_game3.png",
-            "/prosjekter/BoxMove_GameOver.png",
+            "/prosjektBilder/BoxMove_homepage.png",
+            "/prosjektBilder/BoxMove_game1.png",
+            "/prosjektBilder/BoxMove_game2.png",
+            "/prosjektBilder/BoxMove_game3.png",
+            "/prosjektBilder/BoxMove_GameOver.png",
           ]}
           beskrivelse="Et 2D labyrint- og logikkspill utviklet i Java (LibGDX). Spillet er et gruppeprosjekt i emnet systemutvikling. Spilleren navigerer et rutenettbasert brett, flytter bokser, unngår en KI-styrt fiende og bruker power-ups (HEAVYMODE, FRAGILEMODE) for å løse stadig vanskeligere brett og nå igloen."
           teknologier={["Java", "LibGDX", "OOP", "MVC", "Maven"]}
@@ -59,9 +59,9 @@ export default function Prosjekter() {
           nummer={4}
           tittel="Beat for Beat"
           bilder={[
-            "/prosjekter/BeatforBeat1.png",
-            "/prosjekter/BeatforBeat2.png",
-            "/prosjekter/BeatforBeat3.png",
+            "/prosjektBilder/BeatforBeat1.png",
+            "/prosjektBilder/BeatforBeat2.png",
+            "/prosjektBilder/BeatforBeat3.png",
           ]}
           beskrivelse="Egen Beat for Beat webbasert partyspill inspirert av det norske TV-programmet med samme navn. Spillerne skal gjette sanger ord for ord og finne hovedsangen. Bygget med ren HTML, CSS og JavaScript. Inkluderer et innebygd administrasjonspanel hvor man kan legge til, redigere og eksportere egne sanglister. Sangene er lagret lokalt i nettleseren med LocalStorage."
           teknologier={["HTML", "CSS", "JavaScript"]}
@@ -69,7 +69,7 @@ export default function Prosjekter() {
         <ProsjektKort
           nummer={5}
           tittel="QR Studio"
-          bilder={["/prosjekter/QRStudio1.png", "/prosjekter/QRStudio2.png"]}
+          bilder={["/prosjektBilder/QRStudio1.png", "/prosjektBilder/QRStudio2.png"]}
           visGalleri
           beskrivelse="Et lite fullstack-prosjekt der jeg har bygget en egen QR-kode-generator med en Flask-backend og en enkel frontend laget med HTML og CSS. Du limer inn en lenke, velger feilkorrigeringsnivå og får utlevert en QR-koden som kan også lastes ned som en PNG. Lenken er kodet direkte inn i mønsteret uten mellomledd, så den varer så lenge som siden eksisterer."
           teknologier={["Python", "Flask", "HTML/CSS", "JavaScript"]}
