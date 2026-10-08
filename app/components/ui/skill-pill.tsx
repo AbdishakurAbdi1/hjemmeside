@@ -1,7 +1,6 @@
 type Niva = 1 | 2 | 3 | 4;
 
-// Fire nivåer, fra sterkest (1) til svakest (4) — størrelse og fargestyrke
-// avtar sammen, slik at ferdighetsnivået leses direkte av pillen selv.
+// Fire nivåer, fra sterkest (1) til svakest (4) størrelse og fargestyrke
 const nivaClasses: Record<Niva, string> = {
   1: "px-4 py-2 text-base font-semibold bg-terracotta-text dark:bg-terracotta-dark text-cream dark:text-ink",
   2: "px-3.5 py-1.5 text-sm font-medium bg-terracotta-tint dark:bg-terracotta-tint-dark text-terracotta-text dark:text-terracotta-dark border border-terracotta/30 dark:border-terracotta-dark/30",
