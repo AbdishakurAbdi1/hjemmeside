@@ -1,6 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
+
+function subscribe(callback: () => void) {
+  const observer = new MutationObserver(callback);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  return () => observer.disconnect();
+}
+
+function getSnapshot() {
+  return document.documentElement.classList.contains("dark");
+}
 
 function MoonIcon() {
   return (
@@ -20,15 +30,20 @@ function SunIcon() {
 }
 
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(false);
+  // Leser temaet fra <html> (satt av skriptet i layout.tsx), så det overlever sidebytte
+  const dark = useSyncExternalStore(subscribe, getSnapshot, () => false);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-  }, [dark]);
+  function toggleTheme() {
+    const next = !dark;
+    document.documentElement.classList.toggle("dark", next);
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch {}
+  }
 
   return (
     <button
-      onClick={() => setDark(!dark)}
+      onClick={toggleTheme}
       className="text-ink dark:text-ink-dark hover:text-terracotta-text dark:hover:text-terracotta-dark transition-colors rounded-sm focus-visible:outline-2 focus-visible:outline-terracotta focus-visible:outline-offset-2"
       aria-label={dark ? "Bytt til lys modus" : "Bytt til mørk modus"}
     >
